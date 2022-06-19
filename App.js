@@ -1,7 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { NavigationContainer } from "@react-navigation/native";
 import { Ionicons } from "@expo/vector-icons";
-import { GLobalStyles } from "./constants/styles";
+import { GlobalStyles } from "./constants/styles";
 
 //react navigation
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -20,13 +20,13 @@ function ExpensesOverview() {
 		<BottomTabs.Navigator
 			screenOptions={{
 				headerStyle: {
-					backgroundColor: GLobalStyles.colors.primary500,
+					backgroundColor: GlobalStyles.colors.primary500,
 				},
 				headerTintColor: "white",
 				tabBarStyle: {
-					backgroundColor: GLobalStyles.colors.primary500,
+					backgroundColor: GlobalStyles.colors.primary500,
 				},
-				tabBarActiveTintColor: GLobalStyles.colors.accent500,
+				tabBarActiveTintColor: GlobalStyles.colors.accent500,
 			}}
 		>
 			<BottomTabs.Screen
